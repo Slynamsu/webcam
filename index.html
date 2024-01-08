@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get User Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Photo booth container -->
+    <div class="photobooth">
+      <!-- Controls for taking photos -->
+      <div class="controls">
+        <button id="takePhotoBtn">Take Photo</button>
+      </div>
+
+      <!-- Canvas for displaying photos -->
+      <canvas class="photo"></canvas>
+      <!-- Video element for camera stream -->
+      <video class="player"></video>
+      <!-- Container for displaying captured photos -->
+      <div class="strip"></div>
+    </div>
+    <!-- Audio element for snap sound -->
+    <audio class="snap" src="./snap.mp3" preload="auto" hidden></audio>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

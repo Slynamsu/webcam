@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  font-size: 1vw;
+  background: #ffc600;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Photo booth styles */
+.photobooth {
+  background: white;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Styles for elements inside the photobooth */
+.photo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.player {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 20%;
+  max-width: 200px;
+}
+
+/* Styles for displaying captured photos */
+.strip img {
+  width: 100%;
+  max-width: 100px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+}
